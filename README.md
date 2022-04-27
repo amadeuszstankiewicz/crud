@@ -16,10 +16,6 @@ password, varchar(255)
 hourly_rate, float
 email, varchar(100)	
 ```
-3. Run:
-```
-symfony server:start
-```
 
 ## API Endpoints
 
