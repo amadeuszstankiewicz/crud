@@ -2,5 +2,5 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 users_list:
-  path: /display/users
+  path: /api/users
   controller: App\Controller\UserController::index
