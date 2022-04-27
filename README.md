@@ -20,3 +20,32 @@ email, varchar(100)
 ```
 symfony server:start
 ```
+
+## API Endpoints
+
+### GET
+`/api/users` https://cruduserstable.herokuapp.com/api/users
+
+`/api/user/show/1` https://cruduserstable.herokuapp.com/api/user/show/1
+### POST
+`/api/user/create` https://cruduserstable.herokuapp.com/api/user/create
+
+`/api/user/update/{id}` https://cruduserstable.herokuapp.com/api/user/update/1
+
+`/api/user/updatepassword/{id}` https://cruduserstable.herokuapp.com/api/user/updatepassword/1
+### DELETE
+`/api/user/delete/{id}` https://cruduserstable.herokuapp.com/api/user/delete/1
+
+## Description
+### GET /api/users
+Get all existing users.
+### GET /api/user/show/1
+Get specific user.
+### POST /api/user/create
+Create user, the form must have: `name, surname, age, phone, email, password, hourly_rate`.
+### POST /api/user/update/{id}
+Update user `{id}`, the form can have: `name, surname, age, phone, email, hourly_rate`.
+### POST /api/user/updatepassword/{id}
+Update user `{id}` password , the form must have: `password`.
+### DELETE /api/user/delete/{id}
+Delete user `{id}`.
