@@ -27,8 +27,8 @@
                         <td>{{ data['phone'] }}</td>
                         <td>{{ data['email'] }}</td>
                         <td>{{ data['hourly_rate'] }}</td>
-                        <td><a href="/manage/user/show/{{ data['id'] }}"><button>POKAŻ</button></a></td>
-                        <td><a href="/manage/user/update/{{ data['id'] }}"><button>EDYTUJ</button></a></td>
+                        <td><a href="/display/user/show/{{ data['id'] }}"><button>POKAŻ</button></a></td>
+                        <td><a href="/display/user/update/{{ data['id'] }}"><button>EDYTUJ</button></a></td>
                         <td><button onclick="showDeletePopup({{ data['id'] }})">USUŃ</button></td>
                     </tr>
                 {% endfor %}
@@ -37,7 +37,7 @@
     {% else %}
         <h3>Brak użytkowników</h3>
     {% endif %}
-    <a href="/manage/user/create/"><button>Dodaj użytkownika</button></a>
+    <a href="/display/user/create/"><button>Dodaj użytkownika</button></a>
 {% endblock %}
 
 {% block javascripts %}
