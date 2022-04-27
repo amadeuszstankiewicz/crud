@@ -6,7 +6,7 @@ function ShowUser(props) {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/user/show/` + props.userId)
+        axios.get(`https://cruduserstable.herokuapp.com/api/user/show/` + props.userId)
             .then(res => {
                 setUser(res.data);
             })

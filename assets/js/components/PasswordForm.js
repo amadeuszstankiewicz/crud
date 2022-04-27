@@ -21,7 +21,7 @@ function PasswordForm(props) {
 
         axios({
                 method: 'post',
-                url: `http://localhost:8000/api/user/updatepassword/` + props.userId,
+                url: `https://cruduserstable.herokuapp.com/api/user/updatepassword/` + props.userId,
                 data: bodyFormData
             })
             .catch(function (error) {

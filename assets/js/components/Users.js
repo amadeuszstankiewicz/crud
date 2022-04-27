@@ -20,7 +20,7 @@ function Users() {
     }, [userForm]);
 
     function fetchData() {
-        axios.get(`http://localhost:8000/api/users`)
+        axios.get(`https://cruduserstable.herokuapp.com/api/users`)
             .then(res => {
                 if(Array.isArray(res.data)){
                     setUsers(res.data);
@@ -30,7 +30,7 @@ function Users() {
 
     function deleteUser(userId) {
         if(window.confirm('Chcesz usunąć tego użytkownika?')){
-            axios.delete(`http://localhost:8000/api/user/delete/` + userId)
+            axios.delete(`https://cruduserstable.herokuapp.com/api/user/delete/` + userId)
                 .then(res => {
                     fetchData();
                 })

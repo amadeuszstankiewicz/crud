@@ -44,7 +44,7 @@ function UserForm(props) {
 
         axios({
                 method: 'post',
-                url: `http://localhost:8000/api/user/create`,
+                url: `https://cruduserstable.herokuapp.com/api/user/create`,
                 data: bodyFormData
             })
             .catch(function (error) {
@@ -71,7 +71,7 @@ function UserForm(props) {
 
         axios({
                 method: 'post',
-                url: `http://localhost:8000/api/user/update/` + props.userId,
+                url: `https://cruduserstable.herokuapp.com/api/user/update/` + props.userId,
                 data: bodyFormData
             })
             .catch(function (error) {
